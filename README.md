@@ -89,6 +89,28 @@ interface CreateCookiesObject {
 }
 ```
 
+## Typescript
+
+Typing the context argument of your request handler with the exported `ctx` type will give you intellisense
+
+```ts
+// index.d.ts
+import type { setCookies } from '@bpleco/cff-cookie-parser';
+
+interface CloudflareContextData {
+  cookies: {
+    [key: string]: string;
+  };
+  setCookies: setCookies;
+}
+
+interface CookieObject {
+  [key: string]: Cookie;
+}
+
+export type ctx = EventContext<null, '', ContextData>;
+```
+
 ## References
 
 - [cloudflare functions docs](https://developers.cloudflare.com/pages/platform/functions/)
