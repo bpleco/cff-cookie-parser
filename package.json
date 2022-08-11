@@ -1,0 +1,36 @@
+{
+  "name": "@bpleco/cff-cookie-parser",
+  "version": "0.0.1",
+  "description": "Cookie parser middleware for cloudflare functions",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "format": "prettier . --write",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "cookies",
+    "cloudflare",
+    "cloudflare functions"
+  ],
+  "author": "Ben Pleco",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.14.1",
+    "@types/cookie": "^0.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "cookie": "^0.5.0"
+  }
+}
