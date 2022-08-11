@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Cookie parser middleware for cloudflare functions",
   "main": "dist/index.js",
+  "types": "dist/types.d.ts",
   "files": [
     "dist"
   ],
@@ -17,6 +18,9 @@
     "cloudflare",
     "cloudflare functions"
   ],
+  "repository": {
+    "url": "https://github.com/bpleco/cff-cookie-parser"
+  },
   "author": "Ben Pleco",
   "license": "MIT",
   "devDependencies": {
