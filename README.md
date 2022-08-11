@@ -108,7 +108,7 @@ interface CookieObject {
   [key: string]: Cookie;
 }
 
-export type ctx = EventContext<null, '', ContextData>;
+export type CloudflareEventContext = EventContext<null, '', CloudflareContextData>;
 ```
 
 ## References
