@@ -1,5 +1,5 @@
 import { serialize } from 'cookie';
-import { CreateCookiesObject } from '.';
+import { CreateCookiesObject } from './types';
 
 const setCookies = function setCookies(response: Response, cookies: CreateCookiesObject): void {
   const cookieKeys = Object.keys(cookies);
