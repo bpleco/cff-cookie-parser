@@ -57,7 +57,7 @@ export async function onRequest(context) {
     wantACookie: {
       value: 'yesPlease',
       // this is a shorthand property for expires in days
-      expiresIn: 1,
+      expiresIn: 7,
     },
     wantAnotherCookie: {
       value: 'forSure',
@@ -88,3 +88,8 @@ interface CreateCookiesObject {
   };
 }
 ```
+
+## References
+
+- [cloudflare functions docs](https://developers.cloudflare.com/pages/platform/functions/)
+- [cookie npm module](https://www.npmjs.com/package/cookie)
