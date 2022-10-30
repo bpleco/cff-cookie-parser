@@ -1,9 +1,9 @@
 {
   "name": "@bpleco/cff-cookie-parser",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Cookie parser middleware for cloudflare functions",
   "main": "dist/index.js",
-  "types": "dist/types.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
